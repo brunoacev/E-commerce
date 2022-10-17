@@ -5,7 +5,6 @@ import Headers from "../components/Headers";
 import Landing from "../components/Landing";
 import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
-import Products from "../components/Products";
 
 interface Props {
   categories: Category[];
@@ -14,11 +13,7 @@ interface Props {
 const Home = ({ categories, products }: Props) => {
   console.log(products);
 
-  const showProduscts = (category: number) => {
-    return products
-      .filter((product) => product.category._ref === categories[category]._id)
-      .map((product) => <Products key={product._id} data={product} />);
-  };
+
   return (
     <div className="">
       <Head>
