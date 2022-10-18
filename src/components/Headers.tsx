@@ -1,12 +1,12 @@
+import {
+  SearchOutline,
+  ShoppingBagOutline,
+  UserOutline,
+} from "heroicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "../Assets/logo.png";
-import {
-  SearchIcon,
-  ShoppingBagIcon,
-  UserIcon,
-} from "@heroicons/react/outline";
 
 function Headers() {
   const session = false;
@@ -35,16 +35,16 @@ function Headers() {
         </a>
       </div>
       <div className="flex items-center justify-center gap-x-4 md:w-1/5">
-        <SearchIcon className="headerIcon" />
+        <SearchOutline className="headerIcon" />
         <Link href="/checkout">
           <div className="relative cursor-pointer">
             <span className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500 text-[10px] text-white">
               5
             </span>
-            <ShoppingBagIcon className="headerIcon" />
+            <ShoppingBagOutline className="headerIcon" />
           </div>
         </Link>
-        {session ? (
+        {/* {session ? (
           <Image
             src={
               session.user?.image ||
@@ -57,8 +57,8 @@ function Headers() {
             className="cursor-pointer rounded-full"
           />
         ) : (
-          <UserIcon className="headerIcon" onClick={() => signIn()} />
-        )}
+          <UserOutline className="headerIcon" onClick={() => signIn()} />
+        )} */}
       </div>
     </header>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Book from "../Assets/Book.jpg";
+import Book from "../Assets/book.jpg";
 import Button from "./Button";
 
 function Landing() {

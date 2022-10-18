@@ -15,7 +15,8 @@ interface Image {
   _key: string;
   _type: "image";
   asset: {
-    url: string;
+    _type: string;
+    _ref: string;
   };
 }
 

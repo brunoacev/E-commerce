@@ -6,9 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^0.0.0-insiders.ab78fbd",
+    "@heroicons/react": "^2.0.12",
+    "@sanity/image-url": "^1.0.1",
+    "heroicons-react": "^1.4.1",
     "next": "latest",
+    "next-sanity": "^1.0.0",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "sanity": "^2.33.2"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
